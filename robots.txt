@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /?view=customers
+Disallow: /assets/vendor/
+
+Sitemap: /sitemap.xml
