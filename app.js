@@ -925,7 +925,7 @@
     const url = origin + productPath(product);
     const title = `${product.name} | دراپ شاپ`;
     const desc = String(product.desc || product.specs || product.name).replace(/\s+/g, " ").trim().slice(0, 160);
-    const image = product.image || product.covers[0] || origin + "/assets/img/site-bg.jpg";
+    const image = product.image || product.covers[0] || origin + "/site-bg.jpg";
     document.title = title;
     setMeta('meta[name="description"]', "content", desc);
     setMeta("#canonicalUrl", "href", url);

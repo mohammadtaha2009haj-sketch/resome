@@ -26,16 +26,16 @@
   <meta property="og:title" content="دراپ شاپ | خرید آنلاین گجت و محصولات منتخب">
   <meta property="og:description" content="قیمت و مشخصات گجت‌های منتخب را در دراپ شاپ ببینید و سفارش را از اینستاگرام نهایی کنید.">
   <meta property="og:url" content="/">
-  <meta property="og:image" content="/assets/img/site-bg.jpg">
+  <meta property="og:image" content="/site-bg.jpg">
   <meta property="og:image:alt" content="گجت و لوازم دیجیتال دراپ شاپ">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="دراپ شاپ | خرید آنلاین گجت و محصولات منتخب">
   <meta name="twitter:description" content="فروشگاه آنلاین گجت دراپ شاپ؛ مشاهده محصول، کد اختصاصی و سفارش از اینستاگرام.">
-  <meta name="twitter:image" content="/assets/img/site-bg.jpg">
+  <meta name="twitter:image" content="/site-bg.jpg">
 
-  <link rel="icon" href="./assets/img/logo.png" type="image/png">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="icon" href="./logo.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css">
 
   <script type="application/ld+json" id="storeJsonLd">
   {
@@ -45,7 +45,7 @@
     "alternateName": "دراپ شاپ",
     "description": "فروشگاه آنلاین گجت و محصولات منتخب با سفارش از طریق اینستاگرام",
     "url": "/",
-    "image": "/assets/img/site-bg.jpg",
+    "image": "/site-bg.jpg",
     "telephone": "+989918760129",
     "email": "mohammadtaha2009haj@gmail.com",
     "sameAs": [
@@ -63,14 +63,14 @@
       if (canonical) canonical.setAttribute("href", page);
       var map = {
         "og:url": page,
-        "og:image": origin + "/assets/img/site-bg.jpg"
+        "og:image": origin + "/site-bg.jpg"
       };
       Object.keys(map).forEach(function (key) {
         var tag = document.querySelector('meta[property="' + key + '"]');
         if (tag) tag.setAttribute("content", map[key]);
       });
       var tw = document.querySelector('meta[name="twitter:image"]');
-      if (tw) tw.setAttribute("content", origin + "/assets/img/site-bg.jpg");
+      if (tw) tw.setAttribute("content", origin + "/site-bg.jpg");
       var alt = document.querySelector('link[rel="alternate"][hreflang="fa"]');
       if (alt) alt.setAttribute("href", home);
       var json = document.getElementById("storeJsonLd");
@@ -78,7 +78,7 @@
         try {
           var data = JSON.parse(json.textContent);
           data.url = home;
-          data.image = origin + "/assets/img/site-bg.jpg";
+          data.image = origin + "/site-bg.jpg";
           json.textContent = JSON.stringify(data);
         } catch (e) {}
       }
@@ -87,7 +87,7 @@
 </head>
 <body>
   <div class="boot-load" id="bootLoad">
-    <img src="./assets/img/logo.png" alt="دراپ شاپ">
+    <img src="./logo.png" alt="دراپ شاپ">
     <i></i>
   </div>
   <noscript>
@@ -103,7 +103,7 @@
   <header class="header storefront">
     <div class="container header-in">
       <a class="brand" href="#top" aria-label="دراپ شاپ">
-        <img class="brand-logo" src="./assets/img/logo.png" alt="لوگوی دراپ شاپ">
+        <img class="brand-logo" src="./logo.png" alt="لوگوی دراپ شاپ">
         <span>
           Drup Shop
           <br>
@@ -535,7 +535,7 @@
 
   <footer class="footer storefront">
     <div class="container">
-      <img class="footer-logo" src="./assets/img/logo.png" alt="دراپ شاپ">
+      <img class="footer-logo" src="./logo.png" alt="دراپ شاپ">
       © <span id="year"></span>
       Drup Shop — همه حقوق محفوظ است.
     </div>
@@ -687,7 +687,7 @@
     <span class="toast-text"></span>
   </div>
 
-  <script src="./assets/vendor/supabase.min.js"></script>
-  <script src="./assets/js/app.js"></script>
+  <script src="./supabase.min.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
